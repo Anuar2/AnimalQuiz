@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E08A9CF2842367900ED4117 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08A9CE2842367900ED4117 /* Question.swift */; };
+		5E08A9D12842368C00ED4117 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E08A9D02842368C00ED4117 /* Answer.swift */; };
 		5E37050B28421E5100093C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37050A28421E5100093C79 /* AppDelegate.swift */; };
 		5E37050D28421E5100093C79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37050C28421E5100093C79 /* SceneDelegate.swift */; };
 		5E37050F28421E5100093C79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37050E28421E5100093C79 /* ViewController.swift */; };
 		5E37051228421E5100093C79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E37051028421E5100093C79 /* Main.storyboard */; };
 		5E37051428421E5300093C79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E37051328421E5300093C79 /* Assets.xcassets */; };
 		5E37051728421E5300093C79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E37051528421E5300093C79 /* LaunchScreen.storyboard */; };
+		5E3705262842268200093C79 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3705252842268200093C79 /* QuestionViewController.swift */; };
+		5E37052828422A2300093C79 /* FinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E37052728422A2300093C79 /* FinalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E08A9CE2842367900ED4117 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		5E08A9D02842368C00ED4117 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		5E37050728421E5100093C79 /* AnimalQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E37050A28421E5100093C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E37050C28421E5100093C79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		5E37051328421E5300093C79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E37051628421E5300093C79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E37051828421E5300093C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E3705252842268200093C79 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		5E37052728422A2300093C79 /* FinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,59 @@
 		5E37050928421E5100093C79 /* AnimalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				5E37050A28421E5100093C79 /* AppDelegate.swift */,
-				5E37050C28421E5100093C79 /* SceneDelegate.swift */,
-				5E37050E28421E5100093C79 /* ViewController.swift */,
-				5E37051028421E5100093C79 /* Main.storyboard */,
-				5E37051328421E5300093C79 /* Assets.xcassets */,
-				5E37051528421E5300093C79 /* LaunchScreen.storyboard */,
-				5E37051828421E5300093C79 /* Info.plist */,
+				5E3705222842216C00093C79 /* Resources */,
+				5E3705212842216000093C79 /* Models */,
+				5E3705202842212A00093C79 /* View Controllers */,
+				5E37051F284220E100093C79 /* Supporting Files */,
+				5E37051E2842203900093C79 /* Storyboards */,
 			);
 			path = AnimalQuiz;
+			sourceTree = "<group>";
+		};
+		5E37051E2842203900093C79 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5E37051028421E5100093C79 /* Main.storyboard */,
+				5E37051528421E5300093C79 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5E37051F284220E100093C79 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5E37050A28421E5100093C79 /* AppDelegate.swift */,
+				5E37050C28421E5100093C79 /* SceneDelegate.swift */,
+				5E37051828421E5300093C79 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5E3705202842212A00093C79 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E37050E28421E5100093C79 /* ViewController.swift */,
+				5E3705252842268200093C79 /* QuestionViewController.swift */,
+				5E37052728422A2300093C79 /* FinalViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5E3705212842216000093C79 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5E08A9CE2842367900ED4117 /* Question.swift */,
+				5E08A9D02842368C00ED4117 /* Answer.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5E3705222842216C00093C79 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5E37051328421E5300093C79 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +190,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E37052828422A2300093C79 /* FinalViewController.swift in Sources */,
 				5E37050F28421E5100093C79 /* ViewController.swift in Sources */,
 				5E37050B28421E5100093C79 /* AppDelegate.swift in Sources */,
+				5E08A9D12842368C00ED4117 /* Answer.swift in Sources */,
+				5E08A9CF2842367900ED4117 /* Question.swift in Sources */,
+				5E3705262842268200093C79 /* QuestionViewController.swift in Sources */,
 				5E37050D28421E5100093C79 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +345,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87SSGGH7S6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = "AnimalQuiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +373,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 87SSGGH7S6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AnimalQuiz/Info.plist;
+				INFOPLIST_FILE = "AnimalQuiz/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
